@@ -1,1 +1,599 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ryno Fitness | Laxmi Nagar</title><style>:root{--o:#ff6a18;--char:#171717;--sand:#efe7dc}*{box-sizing:border-box}body{margin:0;background:var(--sand);font-family:Arial,sans-serif;color:var(--char)}a{text-decoration:none;color:inherit}.wrap{max-width:1080px;margin:auto;padding:0 22px}.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}.nav b{font-size:22px}.hero{padding:44px 0 72px;display:grid;grid-template-columns:.8fr 1.2fr;gap:34px}.stamp{border:3px solid var(--char);padding:20px;align-self:start;transform:rotate(-3deg);background:#fff}.stamp strong{font-size:50px;color:var(--o)}.hero h1{font-size:clamp(52px,8vw,94px);line-height:.9;margin:0 0 18px}.hero p{font-size:18px;max-width:600px}.btn{display:inline-block;background:var(--char);color:#fff;padding:14px 21px;margin-top:18px;font-weight:800}.path{background:var(--char);color:white;padding:70px 0}.path h2{font-size:42px;max-width:700px}.rail{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.stop{border-top:6px solid var(--o);background:#242424;padding:22px;min-height:190px}.stop b{font-size:21px}.ph{margin-top:14px;border:1px dashed currentColor;padding:10px;font-size:13px}.details{padding:70px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.card{background:#fff;padding:24px;border:1px solid #d4c9bd}.row{padding:9px 0;border-bottom:1px solid #ded5cb}.wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:white;padding:14px 18px;border-radius:40px;font-weight:800}@media(max-width:720px){.hero,.details{grid-template-columns:1fr}.rail{grid-template-columns:1fr}.stamp{transform:none}.hero h1{font-size:58px}}</style></head><body><div class="wrap"><div class="nav"><b>RYNO FITNESS</b><span style="font-size:11px">LAXMI NAGAR · DELHI</span></div><section class="hero"><div class="stamp"><strong>4.6★</strong><br>256 Google reviews<br><br><b>Long weekday hours</b><br>6 AM–10 PM</div><div><div style="color:var(--o);font-size:12px;font-weight:900;letter-spacing:.16em">LAXMI NAGAR · DELHI</div><h1>Turn local trust into membership enquiries.</h1><p>See the gym, understand the joining options and message directly instead of stopping at a listing.</p><a class="btn" href="https://wa.me/919871775527">Ask about a Trial</a></div></section></div><section class="path"><div class="wrap"><div style="color:var(--o);font-size:12px;font-weight:900;letter-spacing:.16em">JOINING RYNO FITNESS</div><h2>A simple path from “I found you” to “Can I try the gym?”</h2><div class="rail"><div class="stop"><b>1. See the setup</b><p>Facilities and training environment first.</p><div class="ph">[Add real floor/equipment photos]</div></div><div class="stop"><b>2. Understand membership</b><p>Clear joining information without hunting.</p><div class="ph">[Add membership plans / inclusions]</div></div><div class="stop"><b>3. Enquire instantly</b><p>One direct WhatsApp route for trial or membership questions.</p><div class="ph">[Add trial policy]</div></div></div></div></section><section class="wrap details"><div class="card"><h3>Visit Ryno Fitness</h3><div class="row">A146, Gali No. 1, near Mangal Bazar / Vijay Chowk, Delhi 110092</div><div class="row">Mon–Sat · 6:00 AM–10:00 PM</div><div class="row">Sunday · 7:00 AM–10:00 AM</div><div class="row">+91 98717 75527</div><div class="ph">[Add Google Maps embed]</div></div><div class="card"><h3>Training & Community</h3><div class="ph">[Add facility gallery]</div><div class="ph">[Add trainers / programs]</div><div class="ph">[Add real member transformations]</div><div class="ph">[Add Google reviews + FAQs]</div></div></section><a class="wa" href="https://wa.me/919871775527">WhatsApp</a></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ryno Fitness — Gym in Laxmi Nagar, Delhi · Open 6 AM–10 PM</title>
+<meta name="description" content="Ryno Fitness is a 4.6★-rated gym in Laxmi Nagar, Delhi — open 6 AM to 10 PM, six days a week. See the floor, take a trial session, then decide about membership.">
+<style>
+/* Anton (latin) self-hosted via Google Fonts CDN — single font file, display:swap */
+@font-face{font-family:Anton;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8.woff2) format("woff2")}
+:root{--ink:#111114;--ink2:#1b1b20;--paper:#f5f1e8;--card:#ffffff;--ember:#ff4d1c;--line:#e2dbcc;--mut:#6f6a5f;--wa:#25d366}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px;border-radius:2px}
+h1,h2{font-family:Anton,system-ui,sans-serif;font-weight:400;letter-spacing:.01em}
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
+.brand{font-family:Anton,system-ui,sans-serif;font-size:22px;letter-spacing:.06em}
+.brand span{color:var(--ember)}
+.nav .loc{font-size:12px;letter-spacing:.14em;color:var(--mut);text-transform:uppercase}
+.navcall{display:inline-block;border:2px solid var(--ink);padding:9px 16px;font-weight:700;font-size:14px}
+.navcall:hover{background:var(--ink);color:var(--paper)}
+/* hero */
+#rippleHost{position:relative;overflow:hidden;background:var(--ink);color:var(--paper)}
+#rippleSource{position:absolute;inset:0;width:100%;height:100%}
+#rippleOutput{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#rippleContent{position:relative;width:100%;height:100%;overflow:auto}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;padding:64px 0 72px;align-items:center}
+.eyebrow{color:var(--ember);font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
+.hero h1{font-size:clamp(44px,7.2vw,84px);line-height:.98;margin:0 0 20px}
+.hero h1 em{font-style:normal;color:var(--ember)}
+.hero .sub{font-size:18px;max-width:56ch;color:#d9d4c8;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:14px 24px;font-weight:800;font-size:16px;border:2px solid transparent;transition:transform .15s ease}
+.btn:active{transform:scale(.98)}
+.btn-p{background:var(--ember);color:#fff}
+.btn-p:hover{background:var(--ember);filter:brightness(.88)}
+.btn-s{border-color:var(--paper);color:var(--paper)}
+.btn-s:hover{background:var(--paper);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{border:1px solid #3a3a41;color:#d9d4c8;font-size:13px;padding:7px 12px}
+.chip b{color:var(--paper)}
+/* hero visual */
+.hv{border:1px solid #3a3a41;background:var(--ink2);padding:26px}
+.hv svg{width:100%;height:auto;display:block}
+.hv .chips{margin-top:18px}
+/* marquee */
+.marq{background:var(--ember);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font-family:Anton,system-ui,sans-serif;letter-spacing:.12em;font-size:15px}
+.marq span{display:inline-block;padding-right:48px;animation:mq 26s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:72px 0}
+.kick{color:var(--ember);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin:0 0 12px}
+h2{font-size:clamp(32px,4.6vw,52px);line-height:1.04;margin:0 0 14px}
+.lede{color:var(--mut);max-width:60ch;margin:0 0 34px}
+/* facilities */
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fac{background:var(--card);border:1px solid var(--line);padding:24px}
+.fac .num{font-family:Anton,system-ui,sans-serif;color:var(--ember);font-size:15px;letter-spacing:.1em}
+.fac h3{margin:10px 0 8px;font-size:20px}
+.fac p{margin:0 0 14px;color:var(--mut);font-size:15px}
+.ph{border:1px dashed var(--line);color:var(--mut);font-size:13px;padding:9px 11px;background:transparent}
+.photo{margin-top:18px;background:var(--card);border:1px solid var(--line);padding:38px 24px;text-align:center}
+.photo .ph{display:inline-block}
+/* steps */
+.dark{background:var(--ink);color:var(--paper)}
+.dark .lede{color:#d9d4c8}
+.dark .kick{color:var(--ember)}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:var(--ink2);border-top:4px solid var(--ember);padding:24px;min-height:170px}
+.step b{font-family:Anton,system-ui,sans-serif;font-weight:400;font-size:20px;display:block;margin-bottom:8px}
+.step p{color:#d9d4c8;font-size:15px;margin:0 0 14px}
+.dark .ph{border-color:#3a3a41;color:#d9d4c8}
+.stepcta{margin-top:30px}
+/* visit */
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vcard{background:var(--card);border:1px solid var(--line);padding:26px}
+.vcard h3{margin:0 0 14px;font-size:20px}
+.row{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.row span:last-child{font-weight:700;text-align:right}
+.addr{font-size:15px;color:var(--mut);margin:12px 0 16px}
+.dir{display:inline-block;border:2px solid var(--ink);padding:11px 18px;font-weight:800;font-size:14px}
+.dir:hover{background:var(--ink);color:var(--paper)}
+/* social proof */
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.dcard{background:var(--card);border:1px solid var(--line);padding:26px}
+.dcard h3{margin:0 0 10px;font-size:20px}
+.dcard p{color:var(--mut);font-size:15px;margin:0 0 14px}
+.big{font-family:Anton,system-ui,sans-serif;font-size:52px;color:var(--ember);line-height:1}
+/* footer */
+footer{background:var(--ink);color:#d9d4c8;padding:52px 0 120px;font-size:14px}
+.fgrid2{display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+footer .brand{color:var(--paper)}
+footer b{color:var(--paper)}
+footer a:hover{color:var(--paper)}
+/* floating + mobile bar */
+.fab{position:fixed;right:20px;bottom:20px;background:var(--wa);color:#fff;padding:15px 22px;border-radius:44px;font-weight:800;box-shadow:0 8px 24px rgba(17,17,20,.28);z-index:50}
+.mobilebar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+.mobilebar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;font-weight:800;font-size:15px;border-radius:6px}
+.mobilebar .mb-c{background:transparent;color:var(--paper);border:2px solid #3a3a41}
+.mobilebar .mb-w{background:var(--wa);color:#fff}
+@media(max-width:53.75em){
+  .hero{grid-template-columns:1fr;padding:44px 0 56px;gap:34px}
+  .fgrid,.sgrid,.vgrid,.dgrid,.fgrid2{grid-template-columns:1fr}
+  .navcall{display:none}
+  .mobilebar{display:flex}
+  .fab{display:none}
+  footer{padding-bottom:110px}
+  section{padding:56px 0}
+}
+@media(min-width:53.8125em){.mobilebar{display:none}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .marq span{animation:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<header id="top">
+  <div class="wrap nav">
+    <div class="brand">RYNO<span>·</span>FITNESS</div>
+    <div class="loc">Laxmi Nagar · Delhi</div>
+    <a class="navcall" href="tel:+919871775527">Call +91 98717 75527</a>
+  </div>
+  <div id="rippleHost">
+  <canvas id="rippleSource" layoutsubtree="true" aria-hidden="true" tabindex="-1"></canvas>
+  <div id="rippleContent">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Gym · Laxmi Nagar · Delhi</p>
+        <h1>Train on <em>your schedule,</em> not ours.</h1>
+        <p class="sub">Ryno Fitness is the 4.6★-rated gym near Mangal Bazar with doors open 6 AM to 10 PM, six days a week. See the floor, take a trial session, then decide about membership.</p>
+        <div class="ctas">
+          <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Ask about a trial on WhatsApp</a>
+          <a class="btn btn-s" href="tel:+919871775527">Call +91 98717 75527</a>
+        </div>
+        <div class="chips">
+          <div class="chip"><b>4.6★</b> from 256 Google reviews</div>
+          <div class="chip">Mon–Sat <b>6 AM–10 PM</b></div>
+          <div class="chip">Sun <b>7–10 AM</b></div>
+        </div>
+      </div>
+      <div class="hero-visual hv" aria-hidden="true">
+        <svg viewBox="0 0 520 340" fill="none" role="presentation">
+          <line class="draw" x1="40" y1="300" x2="480" y2="300" stroke="#3a3a41" stroke-width="2"/>
+          <line class="draw" x1="80" y1="170" x2="440" y2="170" stroke="#f5f1e8" stroke-width="6" stroke-linecap="round"/>
+          <circle class="draw" cx="140" cy="170" r="66" stroke="#ff4d1c" stroke-width="6"/>
+          <circle class="draw" cx="140" cy="170" r="30" stroke="#3a3a41" stroke-width="4"/>
+          <circle class="draw" cx="380" cy="170" r="66" stroke="#ff4d1c" stroke-width="6"/>
+          <circle class="draw" cx="380" cy="170" r="30" stroke="#3a3a41" stroke-width="4"/>
+          <rect class="draw" x="206" y="128" width="14" height="84" rx="4" stroke="#f5f1e8" stroke-width="4"/>
+          <rect class="draw" x="300" y="128" width="14" height="84" rx="4" stroke="#f5f1e8" stroke-width="4"/>
+          <path class="draw" d="M60 96 L96 60 M78 96 L114 60" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/>
+          <path class="draw" d="M424 282 L460 246 M442 282 L478 246" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div class="chips">
+          <div class="chip">Strength · Discipline · Results</div>
+          <div class="chip">Near Mangal Bazar, Vijay Chowk</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <canvas id="rippleOutput" aria-hidden="true"></canvas>
+  </div>
+</header>
+
+<div class="marq" aria-hidden="true"><span>STRENGTH · DISCIPLINE · RESULTS · STRENGTH · DISCIPLINE · RESULTS · STRENGTH · DISCIPLINE · RESULTS · STRENGTH · DISCIPLINE · RESULTS ·&nbsp;</span></div>
+
+<!-- FACILITIES -->
+<section id="floor">
+  <div class="wrap">
+    <p class="kick" data-reveal>The floor</p>
+    <h2 data-reveal>See the gym first. Decide after.</h2>
+    <p class="lede" data-reveal>Walk in and look around before you commit to anything. The training environment is the pitch — come stand in it during opening hours.</p>
+    <div class="fgrid">
+      <div class="fac" data-reveal>
+        <div class="num">01</div>
+        <h3>Strength training floor</h3>
+        <p>The heart of the gym, built around progressive lifting.</p>
+        <div class="ph">[Add equipment &amp; zone details]</div>
+      </div>
+      <div class="fac" data-reveal>
+        <div class="num">02</div>
+        <h3>Cardio zone</h3>
+        <p>Machines for warm-ups, fat-loss days and endurance work.</p>
+        <div class="ph">[Add cardio machine list]</div>
+      </div>
+      <div class="fac" data-reveal>
+        <div class="num">03</div>
+        <h3>Functional &amp; floor space</h3>
+        <p>Open space to move, stretch and finish your session strong.</p>
+        <div class="ph">[Add functional training details]</div>
+      </div>
+    </div>
+    <div class="photo" data-reveal><span class="ph">[Add real floor &amp; equipment photos]</span></div>
+  </div>
+</section>
+
+<!-- JOINING PATH -->
+<section class="dark" id="join">
+  <div class="wrap">
+    <p class="kick" data-reveal>Joining Ryno Fitness</p>
+    <h2 data-reveal>Joining takes three messages.</h2>
+    <p class="lede" data-reveal>No forms and no waiting around — the whole path from “just found you” to “I’m in” runs on WhatsApp.</p>
+    <div class="sgrid">
+      <div class="step" data-reveal>
+        <b>1. Message the gym</b>
+        <p>Ask about trials, timings or anything else — a real reply, not an autoresponder.</p>
+        <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">WhatsApp us</a>
+      </div>
+      <div class="step" data-reveal>
+        <b>2. Come in for a trial</b>
+        <p>Train on the floor before you commit to anything.</p>
+        <div class="ph">[Add trial session policy]</div>
+      </div>
+      <div class="step" data-reveal>
+        <b>3. Pick your membership</b>
+        <p>Choose the plan that fits your routine and your budget.</p>
+        <div class="ph">[Add membership plans &amp; inclusions]</div>
+      </div>
+    </div>
+    <div class="stepcta" data-reveal><a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Start with step one — message us</a></div>
+  </div>
+</section>
+
+<!-- HOURS & VISIT -->
+<section id="visit">
+  <div class="wrap">
+    <p class="kick" data-reveal>Hours &amp; location</p>
+    <h2 data-reveal>Hours that fit your day.</h2>
+    <p class="lede" data-reveal>Before work, after work, Saturday morning — the floor is open when you are free.</p>
+    <div class="vgrid">
+      <div class="vcard" data-reveal>
+        <h3>Opening hours</h3>
+        <div class="row"><span>Monday – Saturday</span><span>6:00 AM – 10:00 PM</span></div>
+        <div class="row"><span>Sunday</span><span>7:00 – 10:00 AM</span></div>
+        <p class="addr">A146, Gali No. 1, near Mangal Bazar / Vijay Chowk, Delhi 110092</p>
+        <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Ryno%20fitness&amp;query_place_id=ChIJf3orf279DDkRwBBw3Ycdxo4" target="_blank" rel="noopener">Get directions on Google Maps</a>
+      </div>
+      <div class="vcard" data-reveal>
+        <h3>Find us</h3>
+        <div class="ph" style="padding:56px 18px;text-align:center;display:block">[Add Google Maps embed]</div>
+        <p class="addr">Landmark: red light pillar, Mangal Bazar — Block R, Vijay Chowk.</p>
+        <a class="dir" href="tel:+919871775527">Call if you can’t find the entrance</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="dark" id="proof" style="padding-bottom:84px">
+  <div class="wrap">
+    <p class="kick" data-reveal>Members &amp; answers</p>
+    <h2 data-reveal>Rated 4.6 by the people who train here.</h2>
+    <p class="lede" data-reveal>Two hundred fifty-six Google reviews and counting — the rating in the corner of this page is theirs, not ours.</p>
+    <div class="dgrid">
+      <div class="dcard" data-reveal>
+        <div class="big">4.6★</div>
+        <p>Aggregate rating across 256 Google reviews.</p>
+        <div class="ph">[Add real Google reviews]</div>
+      </div>
+      <div class="dcard" data-reveal>
+        <h3>Before you visit</h3>
+        <p>Most first-timers ask the same three things — trials, timings and what to bring.</p>
+        <div class="ph">[Add exact FAQs]</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fgrid2">
+    <div>
+      <div class="brand">RYNO<span>·</span>FITNESS</div>
+      <p><b>Ryno Fitness</b> — A146, Gali No. 1, near Mangal Bazar / Vijay Chowk, Delhi 110092<br>Mon–Sat 6:00 AM–10:00 PM · Sun 7:00–10:00 AM</p>
+      <p><a href="tel:+919871775527"><b>+91 98717 75527</b></a> · <a href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">WhatsApp us</a></p>
+    </div>
+    <div>
+      <p><b>Quick links</b></p>
+      <p><a href="#floor">The floor</a> · <a href="#join">Joining</a> · <a href="#visit">Hours &amp; location</a></p>
+      <div class="ph" style="border-color:#3a3a41;color:#d9d4c8;display:inline-block">[Add Instagram &amp; social links]</div>
+      <p style="margin-top:18px">© 2026 Ryno Fitness</p>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session." aria-label="Chat with Ryno Fitness on WhatsApp">WhatsApp</a>
+<nav class="mobilebar" aria-label="Quick contact">
+  <a class="mb-c" href="tel:+919871775527">Call</a>
+  <a class="mb-w" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">WhatsApp — ask about a trial</a>
+</nav>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ExerciseGym","name":"Ryno fitness","telephone":"+919871775527","address":{"@type":"PostalAddress","streetAddress":"A146, Gali No. 1, Mangal Bazar, Vijay Chowk","addressLocality":"Delhi","postalCode":"110092","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":28.632848,"longitude":77.2815092},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"06:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"07:00","closes":"10:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"256"}}
+</script>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer>
+/* Canvas UI — Ripple (vanilla WebGL build)
+ * Source: https://canvasui.dev (DavidHDev/canvas-ui), registry @canvas-ui/ripple-vanilla
+ * MIT-licensed library source, ported from TypeScript with logic intact. */
+(function(){
+"use strict";
+var MAX_RIPPLES=12,BASE_SPEED=340;
+var DEFAULTS={amplitude:.5,speed:.65,wavelength:80,rings:2,decay:1,refraction:100,dispersion:.5,shine:.5,trigger:"click",interval:0};
+var VERT="#version 300 es\nprecision highp float;\nlayout(location = 0) in vec2 aPos;\nout vec2 vUv;\nvoid main () {\n  vUv = aPos * 0.5 + 0.5;\n  gl_Position = vec4(aPos, 0.0, 1.0);\n}";
+var FRAG="#version 300 es\nprecision highp float;\nin vec2 vUv;\nout vec4 outColor;\nuniform sampler2D uContent;\nuniform vec2 uResolution;\nuniform vec4 uRipples[12];\nuniform int uCount;\nuniform float uSpeed;\nuniform float uWavelength;\nuniform float uWidth;\nuniform float uDecay;\nuniform float uRefraction;\nuniform float uDispersion;\nuniform float uShine;\nuniform float uHasContent;\nuniform float uMaxX;\nvec4 page (vec2 p) {\n  p.x = clamp(p.x, 0.0005, uMaxX - 0.0005);\n  p.y = clamp(p.y, 0.0005, 0.9995);\n  return texture(uContent, p);\n}\nvoid main () {\n  vec2 pUv = vec2(vUv.x, 1.0 - vUv.y);\n  vec2 frag = pUv * uResolution;\n  vec2 grad = vec2(0.0);\n  float k = 6.28318530718 / uWavelength;\n  float w2 = uWidth * uWidth;\n  for (int i = 0; i < 12; i++) {\n    if (i >= uCount) break;\n    vec4 rp = uRipples[i];\n    vec2 dv = frag - rp.xy;\n    float r = length(dv);\n    float front = uSpeed * rp.z;\n    float s = r - front;\n    float env = exp(-s * s / w2) * exp(-uDecay * rp.z) * rp.w;\n    env *= smoothstep(0.0, 0.08, rp.z);\n    env *= inversesqrt(1.0 + front / max(uWavelength, 1.0) * 0.2);\n    if (env < 0.0015) continue;\n    float dh = (k * cos(s * k) - 2.0 * s / w2 * sin(s * k)) * env;\n    grad += dv / max(r, 1.0) * dh * uWavelength * 0.16;\n  }\n  float g = dot(grad, vec2(-0.55, -0.8));\n  float glint = pow(clamp(g * 2.2, 0.0, 1.0), 2.0) * uShine;\n  float shade = pow(clamp(-g * 1.6, 0.0, 1.0), 2.0) * uShine * 0.3;\n  if (uHasContent < 0.5) {\n    float a = clamp(glint * 0.9 + shade * 0.5, 0.0, 0.85);\n    outColor = vec4(vec3(glint * 0.9), a);\n    return;\n  }\n  vec2 offs = grad * uRefraction / uResolution;\n  vec3 col;\n  if (uDispersion > 0.001) {\n    float d = uDispersion * 0.35;\n    col = vec3(\n      page(pUv + offs * (1.0 + d)).r,\n      page(pUv + offs).g,\n      page(pUv + offs * (1.0 - d)).b\n    );\n  } else {\n    col = page(pUv + offs).rgb;\n  }\n  col += glint;\n  col *= 1.0 - shade;\n  outColor = vec4(col, 1.0);\n}";
+function supportsHtmlInCanvas(){
+  if(typeof document==="undefined")return false;
+  var probe=document.createElement("canvas");
+  var ctx=probe.getContext("2d");
+  return Boolean(ctx&&typeof ctx.drawElementImage==="function"&&typeof probe.requestPaint==="function");
+}
+function createRipple(elements,options){
+  var config=Object.assign({},DEFAULTS,options||{});
+  var source=elements.source,content=elements.content,output=elements.output;
+  var gl=output.getContext("webgl2",{alpha:true,depth:false,stencil:false,antialias:false,premultipliedAlpha:true});
+  if(!gl||gl.isContextLost())return null;
+  var sourceCtx=source.getContext("2d");
+  var paintable=source;
+  var htmlInCanvas=Boolean(sourceCtx&&typeof sourceCtx.drawElementImage==="function"&&typeof paintable.requestPaint==="function");
+  var contentDirty=false,wake=function(){};
+  if(htmlInCanvas){
+    paintable.onpaint=function(){
+      try{
+        sourceCtx.reset();
+        sourceCtx.drawElementImage(content,0,0);
+        contentDirty=true;
+        wake();
+      }catch(e){}
+    };
+  }
+  function compile(type,text){
+    var shader=gl.createShader(type);
+    gl.shaderSource(shader,text);
+    gl.compileShader(shader);
+    if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS)){
+      console.error("Ripple shader error:",gl.getShaderInfoLog(shader));
+    }
+    return shader;
+  }
+  var vertexShader=compile(gl.VERTEX_SHADER,VERT);
+  var fragmentShader=compile(gl.FRAGMENT_SHADER,FRAG);
+  var program=gl.createProgram();
+  gl.attachShader(program,vertexShader);
+  gl.attachShader(program,fragmentShader);
+  gl.linkProgram(program);
+  var uniforms={};
+  var count=gl.getProgramParameter(program,gl.ACTIVE_UNIFORMS);
+  for(var i=0;i<count;i++){
+    var info=gl.getActiveUniform(program,i);
+    uniforms[info.name.replace("[0]","")]=gl.getUniformLocation(program,info.name);
+  }
+  var quad=gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER,quad);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+  gl.enableVertexAttribArray(0);
+  gl.vertexAttribPointer(0,2,gl.FLOAT,false,0,0);
+  var contentTexture=gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D,contentTexture);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+  gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([0,0,0,0]));
+  var contentMaxX=1;
+  function syncCanvasSize(){
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    var width=Math.max(1,Math.round(output.clientWidth*dpr));
+    var height=Math.max(1,Math.round(output.clientHeight*dpr));
+    if(output.width!==width||output.height!==height){
+      output.width=width;
+      output.height=height;
+    }
+    contentMaxX=Math.min(1,Math.max(.05,content.clientWidth/Math.max(output.clientWidth,1)));
+    if(htmlInCanvas){
+      var cssWidth=Math.max(1,Math.round(source.clientWidth));
+      var cssHeight=Math.max(1,Math.round(source.clientHeight));
+      if(source.width!==cssWidth*dpr||source.height!==cssHeight*dpr){
+        source.width=cssWidth*dpr;
+        source.height=cssHeight*dpr;
+      }
+      paintable.requestPaint();
+    }
+  }
+  syncCanvasSize();
+  function uploadContent(){
+    if(!htmlInCanvas||!contentDirty)return;
+    contentDirty=false;
+    gl.bindTexture(gl.TEXTURE_2D,contentTexture);
+    gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,source);
+  }
+  var ripples=[];
+  var rippleData=new Float32Array(MAX_RIPPLES*4);
+  function splash(x,y,strength){
+    if(reducedMotion)return;
+    if(ripples.length>=MAX_RIPPLES)ripples.shift();
+    ripples.push({x:x,y:y,age:0,amp:strength===undefined?1:strength});
+    start();
+  }
+  function pruneRipples(delta){
+    var diag=Math.hypot(output.clientWidth,output.clientHeight);
+    var speedPx=BASE_SPEED*Math.max(config.speed,.05);
+    var width=config.wavelength*Math.max(config.rings,1)*.5;
+    for(var i=ripples.length-1;i>=0;i--){
+      var rp=ripples[i];
+      rp.age+=delta;
+      var gone=rp.age*speedPx>diag+width*3||Math.exp(-Math.max(config.decay,.05)*rp.age)*rp.amp<.012;
+      if(gone)ripples.splice(i,1);
+    }
+  }
+  function render(){
+    uploadContent();
+    var dpr=output.width/Math.max(output.clientWidth,1);
+    gl.useProgram(program);
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D,contentTexture);
+    gl.uniform1i(uniforms.uContent,0);
+    gl.uniform2f(uniforms.uResolution,output.width,output.height);
+    for(var i=0;i<MAX_RIPPLES;i++){
+      var rp=ripples[i];
+      rippleData[i*4]=rp?rp.x*dpr:0;
+      rippleData[i*4+1]=rp?rp.y*dpr:0;
+      rippleData[i*4+2]=rp?rp.age:0;
+      rippleData[i*4+3]=rp?rp.amp*Math.max(config.amplitude,0):0;
+    }
+    gl.uniform4fv(uniforms.uRipples,rippleData);
+    gl.uniform1i(uniforms.uCount,ripples.length);
+    gl.uniform1f(uniforms.uSpeed,BASE_SPEED*Math.max(config.speed,.05)*dpr);
+    gl.uniform1f(uniforms.uWavelength,Math.max(config.wavelength,4)*dpr);
+    gl.uniform1f(uniforms.uWidth,Math.max(config.wavelength,4)*Math.max(config.rings,1)*.5*dpr);
+    gl.uniform1f(uniforms.uDecay,Math.max(config.decay,.05));
+    gl.uniform1f(uniforms.uRefraction,Math.max(config.refraction,0)*dpr);
+    gl.uniform1f(uniforms.uDispersion,Math.max(config.dispersion,0));
+    gl.uniform1f(uniforms.uShine,Math.max(config.shine,0));
+    gl.uniform1f(uniforms.uHasContent,htmlInCanvas?1:0);
+    gl.uniform1f(uniforms.uMaxX,contentMaxX);
+    gl.bindFramebuffer(gl.FRAMEBUFFER,null);
+    gl.viewport(0,0,output.width,output.height);
+    gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+  }
+  function renderIdle(){
+    gl.bindFramebuffer(gl.FRAMEBUFFER,null);
+    gl.viewport(0,0,output.width,output.height);
+    if(htmlInCanvas){
+      render();
+    }else{
+      gl.clearColor(0,0,0,0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+    }
+  }
+  var raf=0,lastTime=performance.now(),destroyed=false,running=false,visible=true,ambientTimer=0;
+  var motionQuery=window.matchMedia("(prefers-reduced-motion: reduce)");
+  var reducedMotion=motionQuery.matches;
+  function spawnAmbient(){
+    var w=output.clientWidth,h=output.clientHeight;
+    if(w<10||h<10)return;
+    splash(w*(.15+Math.random()*.7),h*(.15+Math.random()*.7),.6+Math.random()*.5);
+  }
+  function frame(now){
+    if(destroyed)return;
+    if(!visible){running=false;return;}
+    var delta=Math.min(Math.max((now-lastTime)/1000,0),1/30);
+    lastTime=now;
+    if(!reducedMotion){
+      pruneRipples(delta);
+      if(config.interval>0){
+        ambientTimer+=delta;
+        if(ambientTimer>=config.interval){
+          ambientTimer=0;
+          spawnAmbient();
+        }
+      }
+    }
+    if(ripples.length>0){
+      render();
+    }else{
+      renderIdle();
+      if(!contentDirty&&(config.interval<=0||reducedMotion)){
+        running=false;
+        return;
+      }
+    }
+    raf=requestAnimationFrame(frame);
+  }
+  function start(){
+    if(destroyed||running||!visible)return;
+    running=true;
+    lastTime=performance.now();
+    raf=requestAnimationFrame(frame);
+  }
+  wake=start;
+  start();
+  function localPoint(event){
+    var rect=output.getBoundingClientRect();
+    return[event.clientX-rect.left,event.clientY-rect.top];
+  }
+  var hoverX=-1e5,hoverY=-1e5;
+  function onPointerDown(event){
+    if(config.trigger==="none")return;
+    var p=localPoint(event);
+    splash(p[0],p[1],1);
+  }
+  function onPointerMove(event){
+    if(config.trigger!=="hover")return;
+    var p=localPoint(event);
+    if(Math.hypot(p[0]-hoverX,p[1]-hoverY)<56)return;
+    hoverX=p[0];hoverY=p[1];
+    splash(p[0],p[1],.3);
+  }
+  content.addEventListener("pointerdown",onPointerDown,{passive:true});
+  content.addEventListener("pointermove",onPointerMove,{passive:true});
+  function onMotionChange(){
+    reducedMotion=motionQuery.matches;
+    if(reducedMotion)ripples.length=0;
+    start();
+  }
+  motionQuery.addEventListener("change",onMotionChange);
+  var observer=new ResizeObserver(function(){syncCanvasSize();start();});
+  observer.observe(output);
+  observer.observe(content);
+  var intersection=new IntersectionObserver(function(entries){
+    visible=entries[entries.length-1]?entries[entries.length-1].isIntersecting:true;
+    if(visible)start();
+  });
+  intersection.observe(output);
+  return{
+    setOptions:function(next){
+      var changed=Object.keys(next).some(function(key){return config[key]!==next[key];});
+      if(!changed)return;
+      Object.assign(config,next);
+      start();
+    },
+    splash:splash,
+    resize:function(){syncCanvasSize();start();},
+    destroy:function(){
+      destroyed=true;
+      cancelAnimationFrame(raf);
+      content.removeEventListener("pointerdown",onPointerDown);
+      content.removeEventListener("pointermove",onPointerMove);
+      observer.disconnect();
+      intersection.disconnect();
+      motionQuery.removeEventListener("change",onMotionChange);
+      gl.deleteTexture(contentTexture);
+      gl.deleteProgram(program);
+      gl.deleteShader(vertexShader);
+      gl.deleteShader(fragmentShader);
+      gl.deleteBuffer(quad);
+      if(htmlInCanvas)paintable.onpaint=null;
+    }
+  };
+}
+window.CanvasUIRipple={supportsHtmlInCanvas:supportsHtmlInCanvas,createRipple:createRipple};
+})();
+
+/* Hero wiring + GSAP motion (reduced-motion safe) */
+document.addEventListener("DOMContentLoaded",function(){
+  try{
+    var C=window.CanvasUIRipple;
+    var host=document.getElementById("rippleHost"),source=document.getElementById("rippleSource"),output=document.getElementById("rippleOutput"),content=document.getElementById("rippleContent");
+    if(C&&host&&source&&output&&content){
+      var native=C.supportsHtmlInCanvas();
+      if(native){
+        var h=content.offsetHeight;
+        if(h>0)host.style.height=h+"px";
+        source.appendChild(content);
+        window.addEventListener("resize",function(){host.style.height=content.offsetHeight+"px";},{passive:true});
+      }else{
+        source.style.display="none";
+      }
+      var inst=C.createRipple({source:source,content:content,output:output},{trigger:"click",interval:4.5,amplitude:.55,refraction:90,dispersion:.4,shine:.6});
+      if(!inst){
+        if(native&&content.parentNode===source){host.insertBefore(content,source);host.style.height="";}
+        if(output.parentNode)output.parentNode.removeChild(output);
+      }
+    }
+  }catch(e){/* graceful fallback: plain HTML hero */}
+  if(!window.gsap||!window.ScrollTrigger)return;
+  gsap.registerPlugin(ScrollTrigger);
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  gsap.from(".hero-copy > *",{y:26,opacity:0,duration:.7,stagger:.09,ease:"power3.out",delay:.15,clearProps:"all"});
+  gsap.from(".hero-visual",{y:30,opacity:0,duration:.8,delay:.35,ease:"power3.out",clearProps:"all"});
+  document.querySelectorAll(".draw").forEach(function(p,i){
+    var L=p.getTotalLength();
+    gsap.fromTo(p,{strokeDasharray:L+" "+L,strokeDashoffset:L},{strokeDashoffset:0,duration:1.2,delay:.5+i*.12,ease:"power2.out"});
+  });
+  gsap.utils.toArray("[data-reveal]").forEach(function(el){
+    gsap.from(el,{y:28,opacity:0,duration:.7,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 88%"},clearProps:"all"});
+  });
+});
+</script>
+</body>
+</html>
