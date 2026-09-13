@@ -3,300 +3,371 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
 <title>Ryno Fitness — Gym in Laxmi Nagar, Delhi · Open 6 AM–10 PM</title>
-<meta name="description" content="Ryno Fitness is a 4.6★-rated gym in Laxmi Nagar, Delhi — open 6 AM to 10 PM, six days a week. See the floor, take a trial session, then decide about membership.">
+<meta name="description" content="Ryno Fitness is a 4.6★-rated gym near Mangal Bazar, Laxmi Nagar, Delhi — open 6 AM to 10 PM six days a week. See the floor, visit during opening hours, then decide about membership.">
+<link rel="canonical" href="https://sharpsites-demo.github.io/ryno-fitness-demo/">
+<meta property="og:title" content="Ryno Fitness — Gym in Laxmi Nagar, Delhi">
+<meta property="og:description" content="4.6★-rated gym near Mangal Bazar, Laxmi Nagar. Open 6 AM–10 PM, six days a week.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sharpsites-demo.github.io/ryno-fitness-demo/">
 <style>
-/* Anton (latin) self-hosted via Google Fonts CDN — single font file, display:swap */
-@font-face{font-family:Anton;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8.woff2) format("woff2")}
-:root{--ink:#111114;--ink2:#1b1b20;--paper:#f5f1e8;--card:#ffffff;--ember:#ff4d1c;--line:#e2dbcc;--mut:#6f6a5f;--wa:#25d366}
-*{box-sizing:border-box}
+@font-face{font-family:Archivo Black;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/archivoblack/v23/HTxqL289NzCGg4MzN6KJ7eW6CYyF_g.woff2) format("woff2")}
+@font-face{font-family:IBM Plex Mono;font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgg.woff2) format("woff2")}
+:root{--chalk:#f4f1ea;--ink:#16150f;--red:#d92c1f;--mut:#6e6a5e;--hair:#d8d2c2;--dmut:#a8a396;--wa:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+body{background:var(--chalk);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-:focus-visible{outline:3px solid var(--ember);outline-offset:3px;border-radius:2px}
-h1,h2{font-family:Anton,system-ui,sans-serif;font-weight:400;letter-spacing:.01em}
-/* nav */
-.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
-.brand{font-family:Anton,system-ui,sans-serif;font-size:22px;letter-spacing:.06em}
-.brand span{color:var(--ember)}
-.nav .loc{font-size:12px;letter-spacing:.14em;color:var(--mut);text-transform:uppercase}
-.navcall{display:inline-block;border:2px solid var(--ink);padding:9px 16px;font-weight:700;font-size:14px}
-.navcall:hover{background:var(--ink);color:var(--paper)}
-/* hero */
-#rippleHost{position:relative;overflow:hidden;background:var(--ink);color:var(--paper)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.mono{font-family:IBM Plex Mono;font-weight:500;letter-spacing:.18em;text-transform:uppercase}
+.dis{font-family:Archivo Black;font-weight:400;text-transform:uppercase;letter-spacing:0}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+/* ---------- nav ---------- */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:2px solid var(--ink)}
+.brand{font-family:Archivo Black;font-size:20px;text-transform:uppercase;letter-spacing:.02em}
+.brand i{font-style:normal;color:var(--red)}
+.nav-r{display:flex;align-items:center;gap:18px}
+.nav .loc{font-family:IBM Plex Mono;font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+.call{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:2px solid var(--ink);font-weight:700;font-size:14px;white-space:nowrap}
+.call:hover{background:var(--ink);color:var(--chalk)}
+/* ---------- hero ---------- */
+#rippleHost{position:relative;overflow:hidden;background:var(--ink);color:var(--chalk);border-bottom:2px solid var(--ink)}
 #rippleSource{position:absolute;inset:0;width:100%;height:100%}
 #rippleOutput{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 #rippleContent{position:relative;width:100%;height:100%;overflow:auto}
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;padding:64px 0 72px;align-items:center}
-.eyebrow{color:var(--ember);font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin:0 0 16px}
-.hero h1{font-size:clamp(44px,7.2vw,84px);line-height:.98;margin:0 0 20px}
-.hero h1 em{font-style:normal;color:var(--ember)}
-.hero .sub{font-size:18px;max-width:56ch;color:#d9d4c8;margin:0 0 28px}
-.ctas{display:flex;flex-wrap:wrap;gap:14px}
-.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:14px 24px;font-weight:800;font-size:16px;border:2px solid transparent;transition:transform .15s ease}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;padding:64px 0 68px;align-items:stretch}
+.kick{font-family:IBM Plex Mono;font-weight:500;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.kick::before{content:"";width:34px;height:2px;background:var(--red)}
+.hero h1{font-family:Archivo Black;font-weight:400;text-transform:uppercase;font-size:clamp(40px,6.4vw,76px);line-height:1.02;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .sub{font-size:18px;max-width:54ch;color:var(--dmut);margin-bottom:30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 26px;font-weight:800;font-size:15px;border:2px solid transparent;transition:transform .15s ease}
 .btn:active{transform:scale(.98)}
-.btn-p{background:var(--ember);color:#fff}
-.btn-p:hover{background:var(--ember);filter:brightness(.88)}
-.btn-s{border-color:var(--paper);color:var(--paper)}
-.btn-s:hover{background:var(--paper);color:var(--ink)}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.chip{border:1px solid #3a3a41;color:#d9d4c8;font-size:13px;padding:7px 12px}
-.chip b{color:var(--paper)}
-/* hero visual */
-.hv{border:1px solid #3a3a41;background:var(--ink2);padding:26px}
+.btn-p{background:var(--red);color:#fff}
+.btn-p:hover{filter:brightness(.9)}
+.btn-s{border-color:var(--chalk);color:var(--chalk)}
+.btn-s:hover{background:var(--chalk);color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(3,auto);gap:0;margin-top:36px;border-top:1px solid #3a382e}
+.stat{padding:16px 22px 0 0}
+.stat b{font-family:Archivo Black;font-weight:400;font-size:26px;display:block;line-height:1.1}
+.stat span{font-family:IBM Plex Mono;font-weight:500;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dmut)}
+.hv{border:1px solid #3a382e;display:flex;flex-direction:column;justify-content:space-between;padding:24px}
 .hv svg{width:100%;height:auto;display:block}
-.hv .chips{margin-top:18px}
-/* marquee */
-.marq{background:var(--ember);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font-family:Anton,system-ui,sans-serif;letter-spacing:.12em;font-size:15px}
-.marq span{display:inline-block;padding-right:48px;animation:mq 26s linear infinite}
+.hv .tagline{font-family:IBM Plex Mono;font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--dmut);border-top:1px solid #3a382e;padding-top:14px;margin-top:18px}
+/* ---------- marquee ---------- */
+.marq{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:11px 0;border-bottom:2px solid var(--ink)}
+.marq span{display:inline-block;font-family:Archivo Black;font-size:14px;letter-spacing:.14em;text-transform:uppercase;animation:mq 30s linear infinite}
 @keyframes mq{to{transform:translateX(-50%)}}
-/* sections */
-section{padding:72px 0}
-.kick{color:var(--ember);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin:0 0 12px}
-h2{font-size:clamp(32px,4.6vw,52px);line-height:1.04;margin:0 0 14px}
-.lede{color:var(--mut);max-width:60ch;margin:0 0 34px}
-/* facilities */
-.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.fac{background:var(--card);border:1px solid var(--line);padding:24px}
-.fac .num{font-family:Anton,system-ui,sans-serif;color:var(--ember);font-size:15px;letter-spacing:.1em}
-.fac h3{margin:10px 0 8px;font-size:20px}
-.fac p{margin:0 0 14px;color:var(--mut);font-size:15px}
-.ph{border:1px dashed var(--line);color:var(--mut);font-size:13px;padding:9px 11px;background:transparent}
-.photo{margin-top:18px;background:var(--card);border:1px solid var(--line);padding:38px 24px;text-align:center}
-.photo .ph{display:inline-block}
-/* steps */
-.dark{background:var(--ink);color:var(--paper)}
-.dark .lede{color:#d9d4c8}
-.dark .kick{color:var(--ember)}
-.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.step{background:var(--ink2);border-top:4px solid var(--ember);padding:24px;min-height:170px}
-.step b{font-family:Anton,system-ui,sans-serif;font-weight:400;font-size:20px;display:block;margin-bottom:8px}
-.step p{color:#d9d4c8;font-size:15px;margin:0 0 14px}
-.dark .ph{border-color:#3a3a41;color:#d9d4c8}
-.stepcta{margin-top:30px}
-/* visit */
-.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.vcard{background:var(--card);border:1px solid var(--line);padding:26px}
-.vcard h3{margin:0 0 14px;font-size:20px}
-.row{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
-.row span:last-child{font-weight:700;text-align:right}
-.addr{font-size:15px;color:var(--mut);margin:12px 0 16px}
-.dir{display:inline-block;border:2px solid var(--ink);padding:11px 18px;font-weight:800;font-size:14px}
-.dir:hover{background:var(--ink);color:var(--paper)}
-/* social proof */
-.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.dcard{background:var(--card);border:1px solid var(--line);padding:26px}
-.dcard h3{margin:0 0 10px;font-size:20px}
-.dcard p{color:var(--mut);font-size:15px;margin:0 0 14px}
-.big{font-family:Anton,system-ui,sans-serif;font-size:52px;color:var(--ember);line-height:1}
+/* ---------- sections ---------- */
+section{padding:76px 0}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:0}
+.sec-head h2{font-family:Archivo Black;font-weight:400;text-transform:uppercase;font-size:clamp(28px,4.2vw,48px);line-height:1.05}
+.sec-head .no{font-family:IBM Plex Mono;font-weight:500;font-size:12px;letter-spacing:.2em;color:var(--mut);white-space:nowrap}
+.lede{color:var(--mut);max-width:62ch;margin:20px 0 0}
+/* floor — ruled rows, no cards */
+.zones{border-bottom:2px solid var(--ink)}
+.zone{display:grid;grid-template-columns:70px 1fr 1.1fr;gap:24px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--hair)}
+.zone:last-child{border-bottom:0}
+.zone .zn{font-family:IBM Plex Mono;font-weight:500;font-size:13px;color:var(--red)}
+.zone h3{font-family:Archivo Black;font-weight:400;text-transform:uppercase;font-size:21px;line-height:1.15}
+.zone p{color:var(--mut);font-size:16px}
+.ph{display:inline-block;border:1px dashed #b7b09c;color:var(--mut);font-size:12.5px;padding:7px 11px;background:transparent}
+.floor-foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:2px solid var(--ink)}
+/* train-your-way — vertical rules */
+.tri{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:2px solid var(--ink)}
+.tri-col{padding:34px 26px 38px;border-right:1px solid var(--hair)}
+.tri-col:last-child{border-right:0}
+.tri-col .glyph{margin-bottom:18px}
+.tri-col .glyph svg{width:54px;height:54px;display:block}
+.tri-col h3{font-family:Archivo Black;font-weight:400;text-transform:uppercase;font-size:19px;margin-bottom:10px}
+.tri-col p{color:var(--mut);font-size:15.5px}
+/* proof — dark band */
+.dark{background:var(--ink);color:var(--chalk)}
+.proof{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.bignum{font-family:Archivo Black;font-weight:400;font-size:clamp(110px,16vw,190px);line-height:.9;color:var(--red)}
+.bignum small{display:block;font-family:IBM Plex Mono;font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--dmut);margin-top:10px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.tag{font-family:IBM Plex Mono;font-weight:500;font-size:12px;letter-spacing:.08em;padding:8px 14px;border:1px solid #3a382e;color:var(--dmut)}
+.proof h2{font-family:Archivo Black;font-weight:400;text-transform:uppercase;font-size:clamp(26px,3.6vw,42px);line-height:1.08}
+.proof .src{font-family:IBM Plex Mono;font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dmut);margin-top:14px}
+.dark .ph{border-color:#4a4738;color:var(--dmut)}
+/* join — numbered steps on paper */
+.steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-bottom:2px solid var(--ink)}
+.step{padding:34px 26px 40px;border-right:1px solid var(--hair)}
+.step:last-child{border-right:0}
+.step .sn{font-family:Archivo Black;font-weight:400;font-size:44px;color:var(--red);line-height:1}
+.step h3{font-family:Archivo Black;font-weight:400;text-transform:uppercase;font-size:18px;margin:16px 0 10px}
+.step p{color:var(--mut);font-size:15.5px;margin-bottom:18px}
+.join-cta{display:flex;flex-wrap:wrap;gap:12px;padding:26px 0}
+.btn-ink{border-color:var(--ink);color:var(--ink)}
+.btn-ink:hover{background:var(--ink);color:var(--chalk)}
+/* find us */
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:0;border-bottom:2px solid var(--ink)}
+.vcol{padding:40px 30px 46px}
+.vcol+.vcol{border-left:1px solid var(--hair)}
+.vcol h3{font-family:Archivo Black;font-weight:400;text-transform:uppercase;font-size:19px;margin-bottom:18px}
+.hrow{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--hair);font-size:15.5px}
+.hrow span:last-child{font-weight:700;white-space:nowrap}
+.addr{font-size:15.5px;color:var(--mut);margin:16px 0 20px;max-width:40ch}
+.dir{display:inline-flex;align-items:center;min-height:48px;padding:10px 20px;border:2px solid var(--ink);font-weight:800;font-size:14px}
+.dir:hover{background:var(--ink);color:var(--chalk)}
+.map-slot{margin-top:20px}
 /* footer */
-footer{background:var(--ink);color:#d9d4c8;padding:52px 0 120px;font-size:14px}
-.fgrid2{display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
-footer .brand{color:var(--paper)}
-footer b{color:var(--paper)}
-footer a:hover{color:var(--paper)}
-/* floating + mobile bar */
-.fab{position:fixed;right:20px;bottom:20px;width:56px;height:56px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(17,17,20,.28);z-index:50}.fab svg{width:30px;height:30px;fill:#fff;display:block}
-.mobilebar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
-.mobilebar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;font-weight:800;font-size:15px;border-radius:6px}
-.mobilebar .mb-c{flex:1;background:transparent;color:var(--paper);border:2px solid #3a3a41}
-.mobilebar .mb-w{flex:0 0 48px;width:48px;height:48px;background:var(--wa);border-radius:50%;padding:0}.mobilebar .mb-w svg{width:26px;height:26px;fill:#fff;display:block}
-@media(max-width:53.75em){
-  .hero{grid-template-columns:1fr;padding:44px 0 56px;gap:34px}
-  .fgrid,.sgrid,.vgrid,.dgrid,.fgrid2{grid-template-columns:1fr}
-  .navcall{display:none}
-  .mobilebar{display:flex}
-  .fab{display:none}
-  footer{padding-bottom:110px}
+footer{background:var(--ink);color:var(--dmut);padding:56px 0 calc(56px + env(safe-area-inset-bottom))}
+.fgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:36px}
+footer .brand{color:var(--chalk)}
+footer b{color:var(--chalk)}
+footer a:hover{color:var(--chalk)}
+.fmeta{font-size:14.5px;line-height:1.9}
+.fmeta .nowrap{white-space:nowrap}
+/* floating chat icon — the only chat control on the page */
+.wa-fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));width:56px;height:56px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(22,21,15,.3);z-index:80}
+.wa-fab svg{width:30px;height:30px;fill:#fff;display:block}
+.wa-fab:hover{filter:brightness(1.05)}
+/* responsive */
+@media(max-width:56.1875em){
+  .hero{grid-template-columns:1fr;padding:44px 0 52px;gap:36px}
+  .hv{order:-1}
+  .stats{grid-template-columns:1fr 1fr 1fr;gap:0}
+  .stat{padding-right:12px}
+  .zone{grid-template-columns:44px 1fr;gap:12px}
+  .zone p{grid-column:2}
+  .tri,.steps{grid-template-columns:1fr}
+  .tri-col,.step{border-right:0;border-bottom:1px solid var(--hair)}
+  .tri-col:last-child,.step:last-child{border-bottom:0}
+  .proof{grid-template-columns:1fr;gap:30px}
+  .visit{grid-template-columns:1fr}
+  .vcol+.vcol{border-left:0;border-top:1px solid var(--hair)}
+  .fgrid{grid-template-columns:1fr}
+  .nav .loc{display:none}
   section{padding:56px 0}
+  footer{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
 }
-@media(min-width:53.8125em){.mobilebar{display:none}}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .marq span{animation:none}
-  *{transition:none!important}
+  *{transition:none!important;animation:none!important}
 }
 </style>
 </head>
 <body>
+
 <header id="top">
-  <div class="wrap nav">
-    <div class="brand">RYNO<span>·</span>FITNESS</div>
-    <div class="loc">Laxmi Nagar · Delhi</div>
-    <a class="navcall" href="tel:+919871775527">Call +91 98717 75527</a>
-  </div>
-  <div id="rippleHost">
-  <canvas id="rippleSource" layoutsubtree="true" aria-hidden="true" tabindex="-1"></canvas>
-  <div id="rippleContent">
-    <div class="wrap hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Gym · Laxmi Nagar · Delhi</p>
-        <h1>Train on <em>your schedule,</em> not ours.</h1>
-        <p class="sub">Ryno Fitness is the 4.6★-rated gym near Mangal Bazar with doors open 6 AM to 10 PM, six days a week. See the floor, take a trial session, then decide about membership.</p>
-        <div class="ctas">
-          <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Ask about a trial</a>
-          <a class="btn btn-s" href="tel:+919871775527">Call +91 98717 75527</a>
-        </div>
-        <div class="chips">
-          <div class="chip"><b>4.6★</b> from 256 Google reviews</div>
-          <div class="chip">Mon–Sat <b>6 AM–10 PM</b></div>
-          <div class="chip">Sun <b>7–10 AM</b></div>
-        </div>
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">Ryno<i>·</i>Fitness</a>
+      <div class="nav-r">
+        <span class="loc">Laxmi Nagar · Delhi</span>
+        <a class="call" href="tel:+919871775527">Call <span class="nowrap">+91 98717 75527</span></a>
       </div>
-      <div class="hero-visual hv" aria-hidden="true">
-        <svg viewBox="0 0 520 340" fill="none" role="presentation">
-          <line class="draw" x1="40" y1="300" x2="480" y2="300" stroke="#3a3a41" stroke-width="2"/>
-          <line class="draw" x1="80" y1="170" x2="440" y2="170" stroke="#f5f1e8" stroke-width="6" stroke-linecap="round"/>
-          <circle class="draw" cx="140" cy="170" r="66" stroke="#ff4d1c" stroke-width="6"/>
-          <circle class="draw" cx="140" cy="170" r="30" stroke="#3a3a41" stroke-width="4"/>
-          <circle class="draw" cx="380" cy="170" r="66" stroke="#ff4d1c" stroke-width="6"/>
-          <circle class="draw" cx="380" cy="170" r="30" stroke="#3a3a41" stroke-width="4"/>
-          <rect class="draw" x="206" y="128" width="14" height="84" rx="4" stroke="#f5f1e8" stroke-width="4"/>
-          <rect class="draw" x="300" y="128" width="14" height="84" rx="4" stroke="#f5f1e8" stroke-width="4"/>
-          <path class="draw" d="M60 96 L96 60 M78 96 L114 60" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/>
-          <path class="draw" d="M424 282 L460 246 M442 282 L478 246" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/>
-        </svg>
-        <div class="chips">
-          <div class="chip">Strength · Discipline · Results</div>
-          <div class="chip">Near Mangal Bazar, Vijay Chowk</div>
+    </nav>
+  </div>
+
+  <!-- HERO — Canvas UI Ripple (vanilla WebGL build), secondary accent -->
+  <div id="rippleHost">
+    <canvas id="rippleSource" layoutsubtree="true" aria-hidden="true" tabindex="-1"></canvas>
+    <div id="rippleContent">
+      <div class="wrap hero">
+        <div class="hero-copy">
+          <p class="kick">Gym · Mangal Bazar · Laxmi Nagar</p>
+          <h1>Train before work. <em>Train after work.</em></h1>
+          <p class="sub">Ryno Fitness opens at 6 AM, six days a week, and stays open till 10 PM — a 4.6★-rated gym near Mangal Bazar built around the hours Laxmi Nagar actually keeps.</p>
+          <div class="ctas">
+            <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20membership.">Message the gym</a>
+            <a class="btn btn-s" href="#floor">See the floor</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>4.6★</b><span>256 Google reviews</span></div>
+            <div class="stat"><b>6 AM–10 PM</b><span>Mon–Sat opening hours</span></div>
+            <div class="stat"><b>7–10 AM</b><span>Sunday morning session</span></div>
+          </div>
+        </div>
+        <div class="hv" aria-hidden="true">
+          <svg viewBox="0 0 460 300" fill="none" role="presentation">
+            <line class="draw" x1="30" y1="262" x2="430" y2="262" stroke="#3a382e" stroke-width="2"/>
+            <line class="draw" x1="70" y1="150" x2="390" y2="150" stroke="#f4f1ea" stroke-width="6" stroke-linecap="round"/>
+            <circle class="draw" cx="122" cy="150" r="56" stroke="#d92c1f" stroke-width="6"/>
+            <circle class="draw" cx="122" cy="150" r="24" stroke="#3a382e" stroke-width="4"/>
+            <circle class="draw" cx="338" cy="150" r="56" stroke="#d92c1f" stroke-width="6"/>
+            <circle class="draw" cx="338" cy="150" r="24" stroke="#3a382e" stroke-width="4"/>
+            <rect class="draw" x="196" y="112" width="12" height="76" rx="3" stroke="#f4f1ea" stroke-width="4"/>
+            <rect class="draw" x="252" y="112" width="12" height="76" rx="3" stroke="#f4f1ea" stroke-width="4"/>
+            <path class="draw" d="M52 84 L86 50 M70 84 L104 50" stroke="#d92c1f" stroke-width="4" stroke-linecap="round"/>
+            <path class="draw" d="M356 246 L390 212 M374 246 L408 212" stroke="#d92c1f" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <div class="tagline">Strength · Discipline · Results</div>
         </div>
       </div>
     </div>
+    <canvas id="rippleOutput" aria-hidden="true"></canvas>
   </div>
-  <canvas id="rippleOutput" aria-hidden="true"></canvas>
-  </div>
+
+  <div class="marq" aria-hidden="true"><span>Strength · Discipline · Results · Strength · Discipline · Results · Strength · Discipline · Results · Strength · Discipline · Results · Strength · Discipline · Results · Strength · Discipline · Results ·&nbsp;</span></div>
 </header>
 
-<div class="marq" aria-hidden="true"><span>STRENGTH · DISCIPLINE · RESULTS · STRENGTH · DISCIPLINE · RESULTS · STRENGTH · DISCIPLINE · RESULTS · STRENGTH · DISCIPLINE · RESULTS ·&nbsp;</span></div>
-
-<!-- FACILITIES -->
-<section id="floor">
-  <div class="wrap">
-    <p class="kick" data-reveal>The floor</p>
-    <h2 data-reveal>See the gym first. Decide after.</h2>
-    <p class="lede" data-reveal>Walk in and look around before you commit to anything. The training environment is the pitch — come stand in it during opening hours.</p>
-    <div class="fgrid">
-      <div class="fac" data-reveal>
-        <div class="num">01</div>
-        <h3>Strength training floor</h3>
-        <p>The heart of the gym, built around progressive lifting.</p>
-        <div class="ph">[Add equipment &amp; zone details]</div>
+<main>
+  <!-- 01 THE FLOOR -->
+  <section id="floor">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2>The floor, before the paperwork</h2>
+        <span class="no">01 — Facilities</span>
       </div>
-      <div class="fac" data-reveal>
-        <div class="num">02</div>
-        <h3>Cardio zone</h3>
-        <p>Machines for warm-ups, fat-loss days and endurance work.</p>
-        <div class="ph">[Add cardio machine list]</div>
+      <p class="lede" data-reveal>Any gym membership is a decision you live with every morning. Walk the room during opening hours first — the three zones below are what you will train in.</p>
+      <div class="zones">
+        <div class="zone" data-reveal>
+          <span class="zn">A</span>
+          <h3>Strength training floor</h3>
+          <p>The core of the gym, set up around progressive lifting.</p>
+        </div>
+        <div class="zone" data-reveal>
+          <span class="zn">B</span>
+          <h3>Cardio zone</h3>
+          <p>Machines for warm-ups, conditioning and endurance days.</p>
+        </div>
+        <div class="zone" data-reveal>
+          <span class="zn">C</span>
+          <h3>Functional &amp; floor space</h3>
+          <p>Open mat area to move, stretch and finish sessions strong.</p>
+        </div>
       </div>
-      <div class="fac" data-reveal>
-        <div class="num">03</div>
-        <h3>Functional &amp; floor space</h3>
-        <p>Open space to move, stretch and finish your session strong.</p>
-        <div class="ph">[Add functional training details]</div>
-      </div>
-    </div>
-    <div class="photo" data-reveal><span class="ph">[Add real floor &amp; equipment photos]</span></div>
-  </div>
-</section>
-
-<!-- JOINING PATH -->
-<section class="dark" id="join">
-  <div class="wrap">
-    <p class="kick" data-reveal>Joining Ryno Fitness</p>
-    <h2 data-reveal>Joining takes three messages.</h2>
-    <p class="lede" data-reveal>No forms and no waiting around — the whole path from “just found you” to “I’m in” is one conversation.</p>
-    <div class="sgrid">
-      <div class="step" data-reveal>
-        <b>1. Message the gym</b>
-        <p>Ask about trials, timings or anything else — a real reply, not an autoresponder.</p>
-        <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Message us</a>
-      </div>
-      <div class="step" data-reveal>
-        <b>2. Come in for a trial</b>
-        <p>Train on the floor before you commit to anything.</p>
-        <div class="ph">[Add trial session policy]</div>
-      </div>
-      <div class="step" data-reveal>
-        <b>3. Pick your membership</b>
-        <p>Choose the plan that fits your routine and your budget.</p>
-        <div class="ph">[Add membership plans &amp; inclusions]</div>
+      <div class="floor-foot" data-reveal>
+        <span class="ph">[Add gym photos]</span>
+        <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Ryno%20fitness&amp;query_place_id=ChIJf3orf279DDkRwBBw3Ycdxo4" target="_blank" rel="noopener">Get directions</a>
       </div>
     </div>
-    <div class="stepcta" data-reveal><a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Start with step one — message us</a></div>
-  </div>
-</section>
+  </section>
 
-<!-- HOURS & VISIT -->
-<section id="visit">
-  <div class="wrap">
-    <p class="kick" data-reveal>Hours &amp; location</p>
-    <h2 data-reveal>Hours that fit your day.</h2>
-    <p class="lede" data-reveal>Before work, after work, Saturday morning — the floor is open when you are free.</p>
-    <div class="vgrid">
-      <div class="vcard" data-reveal>
-        <h3>Opening hours</h3>
-        <div class="row"><span>Monday – Saturday</span><span>6:00 AM – 10:00 PM</span></div>
-        <div class="row"><span>Sunday</span><span>7:00 – 10:00 AM</span></div>
-        <p class="addr">A146, Gali No. 1, near Mangal Bazar / Vijay Chowk, Delhi 110092</p>
-        <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Ryno%20fitness&amp;query_place_id=ChIJf3orf279DDkRwBBw3Ycdxo4" target="_blank" rel="noopener">Get directions on Google Maps</a>
+  <!-- 02 TRAIN YOUR WAY -->
+  <section id="train" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2>Every session starts where you are</h2>
+        <span class="no">02 — Training</span>
       </div>
-      <div class="vcard" data-reveal>
-        <h3>Find us</h3>
-        <div class="ph" style="padding:56px 18px;text-align:center;display:block">[Add Google Maps embed]</div>
-        <p class="addr">Landmark: red light pillar, Mangal Bazar — Block R, Vijay Chowk.</p>
-        <a class="dir" href="tel:+919871775527">Call if you can’t find the entrance</a>
+      <div class="tri">
+        <div class="tri-col" data-reveal>
+          <div class="glyph" aria-hidden="true"><svg viewBox="0 0 54 54" fill="none"><circle cx="27" cy="27" r="17" stroke="#d92c1f" stroke-width="4"/><circle cx="27" cy="27" r="6" stroke="#16150f" stroke-width="3"/></svg></div>
+          <h3>Pick your discipline</h3>
+          <p>Strength, cardio or functional work — the floor is zoned so each has its own corner.</p>
+        </div>
+        <div class="tri-col" data-reveal>
+          <div class="glyph" aria-hidden="true"><svg viewBox="0 0 54 54" fill="none"><path d="M8 40 L20 24 L30 32 L46 12" stroke="#d92c1f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="12" r="4" fill="#d92c1f"/></svg></div>
+          <h3>Set your pace</h3>
+          <p>Early-morning sessions run from 6 AM; evenings stay open till 10 PM, Monday through Saturday.</p>
+        </div>
+        <div class="tri-col" data-reveal>
+          <div class="glyph" aria-hidden="true"><svg viewBox="0 0 54 54" fill="none"><rect x="10" y="10" width="34" height="34" stroke="#d92c1f" stroke-width="4"/><rect x="20" y="20" width="14" height="14" fill="#16150f"/></svg></div>
+          <h3>Track the weeks</h3>
+          <p>Consistency is the whole method — the same room, the same hours, week after week.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROOF -->
-<section class="dark" id="proof" style="padding-bottom:84px">
-  <div class="wrap">
-    <p class="kick" data-reveal>Members &amp; answers</p>
-    <h2 data-reveal>Rated 4.6 by the people who train here.</h2>
-    <p class="lede" data-reveal>Two hundred fifty-six Google reviews and counting — the rating in the corner of this page is theirs, not ours.</p>
-    <div class="dgrid">
-      <div class="dcard" data-reveal>
-        <div class="big">4.6★</div>
-        <p>Aggregate rating across 256 Google reviews.</p>
-        <div class="ph">[Add real Google reviews]</div>
-      </div>
-      <div class="dcard" data-reveal>
-        <h3>Before you visit</h3>
-        <p>Most first-timers ask the same three things — trials, timings and what to bring.</p>
-        <div class="ph">[Add exact FAQs]</div>
+  <!-- 03 PROOF -->
+  <section class="dark" id="proof">
+    <div class="wrap">
+      <div class="proof">
+        <div class="bignum" data-reveal>4.6<small>★ average · 256 reviews</small></div>
+        <div data-reveal>
+          <h2>The rating belongs to the members</h2>
+          <div class="tags" aria-label="Most common review tags on Google">
+            <span class="tag">gym</span><span class="tag">trainer</span><span class="tag">machines</span><span class="tag">equipments</span><span class="tag">ambience</span><span class="tag">staff</span><span class="tag">safe for girls</span>
+          </div>
+          <p class="src">Source: Google reviews for Ryno fitness, Laxmi Nagar</p>
+          <p style="margin-top:18px"><span class="ph">[Add real Google reviews]</span></p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- 04 JOIN -->
+  <section id="join">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2>Three steps, no forms</h2>
+        <span class="no">03 — Joining</span>
+      </div>
+      <p class="lede" data-reveal>The path from “found them on Google” to training on the floor is three steps long.</p>
+      <div class="steps">
+        <div class="step" data-reveal>
+          <div class="sn">1</div>
+          <h3>Message the gym</h3>
+          <p>Ask whatever you would ask at the desk — timings, the floor, membership.</p>
+          <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20membership.">Message the gym</a>
+        </div>
+        <div class="step" data-reveal>
+          <div class="sn">2</div>
+          <h3>Visit in opening hours</h3>
+          <p>Mon–Sat 6 AM–10 PM, Sunday 7–10 AM. See the room before deciding anything.</p>
+          <a class="btn btn-ink" href="#visit">Check hours &amp; map</a>
+        </div>
+        <div class="step" data-reveal>
+          <div class="sn">3</div>
+          <h3>Decide on membership</h3>
+          <p>Plans and inclusions get filled in here by the gym.</p>
+          <span class="ph">[Add membership plans]</span>
+        </div>
+      </div>
+      <div class="join-cta" data-reveal>
+        <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20membership.">Start with step one</a>
+        <a class="btn btn-ink" href="tel:+919871775527">Call <span class="nowrap">+91 98717 75527</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 FIND US -->
+  <section id="visit" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2>Find the room</h2>
+        <span class="no">04 — Location</span>
+      </div>
+      <div class="visit">
+        <div class="vcol" data-reveal>
+          <h3>Opening hours</h3>
+          <div class="hrow"><span>Monday – Saturday</span><span>6:00 AM – 10:00 PM</span></div>
+          <div class="hrow"><span>Sunday</span><span>7:00 – 10:00 AM</span></div>
+          <p class="addr">A146, Gali No. 1, near Mangal Bazar / Vijay Chowk, Delhi 110092 — landmark: the red light pillar.</p>
+          <a class="dir" href="https://www.google.com/maps/search/?api=1&amp;query=Ryno%20fitness&amp;query_place_id=ChIJf3orf279DDkRwBBw3Ycdxo4" target="_blank" rel="noopener">Get directions on Google Maps</a>
+        </div>
+        <div class="vcol" data-reveal>
+          <h3>On the map</h3>
+          <div class="map-slot"><span class="ph" style="padding:64px 18px;display:block;text-align:center">[Add Google Maps embed]</span></div>
+          <p class="addr">Mangal Bazar, Block R, Vijay Chowk — Laxmi Nagar, East Delhi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <div class="wrap fgrid2">
-    <div>
-      <div class="brand">RYNO<span>·</span>FITNESS</div>
-      <p><b>Ryno Fitness</b> — A146, Gali No. 1, near Mangal Bazar / Vijay Chowk, Delhi 110092<br>Mon–Sat 6:00 AM–10:00 PM · Sun 7:00–10:00 AM</p>
-      <p><a href="tel:+919871775527"><b>+91 98717 75527</b></a> · <a href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Message us</a></p>
+  <div class="wrap fgrid">
+    <div class="fmeta">
+      <div class="brand">Ryno<i>·</i>Fitness</div>
+      <p style="margin-top:14px"><b>Ryno fitness</b> — A146, Gali No. 1, near Mangal Bazar / Vijay Chowk, Delhi 110092<br>
+      Mon–Sat 6:00 AM–10:00 PM · Sun 7:00–10:00 AM<br>
+      <a href="tel:+919871775527"><b class="nowrap">+91 98717 75527</b></a></p>
     </div>
-    <div>
-      <p><b>Quick links</b></p>
-      <p><a href="#floor">The floor</a> · <a href="#join">Joining</a> · <a href="#visit">Hours &amp; location</a></p>
-      <div class="ph" style="border-color:#3a3a41;color:#d9d4c8;display:inline-block">[Add Instagram &amp; social links]</div>
-      <p style="margin-top:18px">© 2026 Ryno Fitness</p>
+    <div class="fmeta">
+      <p><b>On this page</b></p>
+      <p><a href="#floor">The floor</a> · <a href="#train">Training</a> · <a href="#proof">Reviews</a> · <a href="#join">Joining</a> · <a href="#visit">Location</a></p>
+      <p style="margin-top:14px"><a href="https://www.instagram.com/_ryno.fitness_/" target="_blank" rel="noopener">Instagram — @_ryno.fitness_</a></p>
+      <p style="margin-top:14px">© 2026 Ryno fitness</p>
     </div>
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session." aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-<nav class="mobilebar" aria-label="Quick contact">
-  <a class="mb-c" href="tel:+919871775527">Call</a>
-  <a class="mb-w" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session." aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-</nav>
+<!-- The single chat control: official green circular icon, verified wa.me link -->
+<a class="wa-fab" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20membership." aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ExerciseGym","name":"Ryno fitness","telephone":"+919871775527","address":{"@type":"PostalAddress","streetAddress":"A146, Gali No. 1, Mangal Bazar, Vijay Chowk","addressLocality":"Delhi","postalCode":"110092","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":28.632848,"longitude":77.2815092},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"06:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"07:00","closes":"10:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"256"}}
+{"@context":"https://schema.org","@type":"ExerciseGym","name":"Ryno fitness","telephone":"+919871775527","address":{"@type":"PostalAddress","streetAddress":"A146, Gali No. 1, Mangal Bazar, Vijay Chowk","addressLocality":"Delhi","postalCode":"110092","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":28.632848,"longitude":77.2815092},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"06:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"07:00","closes":"10:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"256"},"sameAs":["https://www.instagram.com/_ryno.fitness_/"]}
 </script>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -574,7 +645,7 @@ document.addEventListener("DOMContentLoaded",function(){
       }else{
         source.style.display="none";
       }
-      var inst=C.createRipple({source:source,content:content,output:output},{trigger:"click",interval:4.5,amplitude:.55,refraction:90,dispersion:.4,shine:.6});
+      var inst=C.createRipple({source:source,content:content,output:output},{trigger:"click",interval:6,amplitude:.5,refraction:80,dispersion:.35,shine:.5});
       if(!inst){
         if(native&&content.parentNode===source){host.insertBefore(content,source);host.style.height="";}
         if(output.parentNode)output.parentNode.removeChild(output);
@@ -585,13 +656,13 @@ document.addEventListener("DOMContentLoaded",function(){
   gsap.registerPlugin(ScrollTrigger);
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
   gsap.from(".hero-copy > *",{y:26,opacity:0,duration:.7,stagger:.09,ease:"power3.out",delay:.15,clearProps:"all"});
-  gsap.from(".hero-visual",{y:30,opacity:0,duration:.8,delay:.35,ease:"power3.out",clearProps:"all"});
+  gsap.from(".hv",{y:30,opacity:0,duration:.8,delay:.35,ease:"power3.out",clearProps:"all"});
   document.querySelectorAll(".draw").forEach(function(p,i){
     var L=p.getTotalLength();
-    gsap.fromTo(p,{strokeDasharray:L+" "+L,strokeDashoffset:L},{strokeDashoffset:0,duration:1.2,delay:.5+i*.12,ease:"power2.out"});
+    gsap.fromTo(p,{strokeDasharray:L+" "+L,strokeDashoffset:L},{strokeDashoffset:0,duration:1.1,delay:.5+i*.1,ease:"power2.out"});
   });
   gsap.utils.toArray("[data-reveal]").forEach(function(el){
-    gsap.from(el,{y:28,opacity:0,duration:.7,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 88%"},clearProps:"all"});
+    gsap.from(el,{y:26,opacity:0,duration:.65,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 88%"},clearProps:"all"});
   });
 });
 </script>
