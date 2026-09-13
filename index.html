@@ -97,11 +97,11 @@ footer .brand{color:var(--paper)}
 footer b{color:var(--paper)}
 footer a:hover{color:var(--paper)}
 /* floating + mobile bar */
-.fab{position:fixed;right:20px;bottom:20px;background:var(--wa);color:#fff;padding:15px 22px;border-radius:44px;font-weight:800;box-shadow:0 8px 24px rgba(17,17,20,.28);z-index:50}
+.fab{position:fixed;right:20px;bottom:20px;width:56px;height:56px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(17,17,20,.28);z-index:50}.fab svg{width:30px;height:30px;fill:#fff;display:block}
 .mobilebar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
 .mobilebar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;font-weight:800;font-size:15px;border-radius:6px}
-.mobilebar .mb-c{background:transparent;color:var(--paper);border:2px solid #3a3a41}
-.mobilebar .mb-w{background:var(--wa);color:#fff}
+.mobilebar .mb-c{flex:1;background:transparent;color:var(--paper);border:2px solid #3a3a41}
+.mobilebar .mb-w{flex:0 0 48px;width:48px;height:48px;background:var(--wa);border-radius:50%;padding:0}.mobilebar .mb-w svg{width:26px;height:26px;fill:#fff;display:block}
 @media(max-width:53.75em){
   .hero{grid-template-columns:1fr;padding:44px 0 56px;gap:34px}
   .fgrid,.sgrid,.vgrid,.dgrid,.fgrid2{grid-template-columns:1fr}
@@ -135,7 +135,7 @@ footer a:hover{color:var(--paper)}
         <h1>Train on <em>your schedule,</em> not ours.</h1>
         <p class="sub">Ryno Fitness is the 4.6★-rated gym near Mangal Bazar with doors open 6 AM to 10 PM, six days a week. See the floor, take a trial session, then decide about membership.</p>
         <div class="ctas">
-          <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Ask about a trial on WhatsApp</a>
+          <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Ask about a trial</a>
           <a class="btn btn-s" href="tel:+919871775527">Call +91 98717 75527</a>
         </div>
         <div class="chips">
@@ -205,12 +205,12 @@ footer a:hover{color:var(--paper)}
   <div class="wrap">
     <p class="kick" data-reveal>Joining Ryno Fitness</p>
     <h2 data-reveal>Joining takes three messages.</h2>
-    <p class="lede" data-reveal>No forms and no waiting around — the whole path from “just found you” to “I’m in” runs on WhatsApp.</p>
+    <p class="lede" data-reveal>No forms and no waiting around — the whole path from “just found you” to “I’m in” is one conversation.</p>
     <div class="sgrid">
       <div class="step" data-reveal>
         <b>1. Message the gym</b>
         <p>Ask about trials, timings or anything else — a real reply, not an autoresponder.</p>
-        <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">WhatsApp us</a>
+        <a class="btn btn-p" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Message us</a>
       </div>
       <div class="step" data-reveal>
         <b>2. Come in for a trial</b>
@@ -278,7 +278,7 @@ footer a:hover{color:var(--paper)}
     <div>
       <div class="brand">RYNO<span>·</span>FITNESS</div>
       <p><b>Ryno Fitness</b> — A146, Gali No. 1, near Mangal Bazar / Vijay Chowk, Delhi 110092<br>Mon–Sat 6:00 AM–10:00 PM · Sun 7:00–10:00 AM</p>
-      <p><a href="tel:+919871775527"><b>+91 98717 75527</b></a> · <a href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">WhatsApp us</a></p>
+      <p><a href="tel:+919871775527"><b>+91 98717 75527</b></a> · <a href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">Message us</a></p>
     </div>
     <div>
       <p><b>Quick links</b></p>
@@ -289,10 +289,10 @@ footer a:hover{color:var(--paper)}
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session." aria-label="Chat with Ryno Fitness on WhatsApp">WhatsApp</a>
+<a class="fab" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session." aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
 <nav class="mobilebar" aria-label="Quick contact">
   <a class="mb-c" href="tel:+919871775527">Call</a>
-  <a class="mb-w" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session.">WhatsApp — ask about a trial</a>
+  <a class="mb-w" href="https://wa.me/919871775527?text=Hi%20Ryno%20Fitness!%20I%20found%20your%20website%20and%20I%27d%20like%20to%20ask%20about%20a%20trial%20session." aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
 </nav>
 
 <script type="application/ld+json">
